@@ -15,6 +15,10 @@ const userSchema = new mongoose.Schema({
         type: String,
         required:'Password is required!!'
      },
+     retypepassword:{
+        type: String,
+        required:'Password is not the same as the other!!'
+     },
  },
     {
         timestamps:true,
